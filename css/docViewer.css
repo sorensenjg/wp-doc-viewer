@@ -1,0 +1,129 @@
+* {
+  outline: none; }
+
+.mfp-docViewer .mfp-container {
+  padding: 0; }
+  .mfp-docViewer .mfp-container .mfp-content {
+    height: 100%; }
+
+.docViewer {
+  height: 100%; }
+  .docViewer .docViewer-inner {
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    height: 100%;
+    background: #222222; }
+    .docViewer .docViewer-inner #docViewer-header {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      padding: 1em;
+      background: #333333; }
+      .docViewer .docViewer-inner #docViewer-header .docViewer-header-inner {
+        display: inline-block;
+        vertical-align: middle; }
+        @media (max-width: 425px) {
+          .docViewer .docViewer-inner #docViewer-header .docViewer-header-inner {
+            font-size: 0.7em;
+            float: none !important;
+            display: block; } }
+        .docViewer .docViewer-inner #docViewer-header .docViewer-header-inner > * {
+          color: #ffffff;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 0.2em 0 0;
+          padding: 0.5em 1em; }
+        .docViewer .docViewer-inner #docViewer-header .docViewer-header-inner.left {
+          float: left;
+          overflow: hidden; }
+        .docViewer .docViewer-inner #docViewer-header .docViewer-header-inner.right {
+          float: right; }
+        .docViewer .docViewer-inner #docViewer-header .docViewer-header-inner label {
+          font-weight: lighter; }
+    .docViewer .docViewer-inner #docViewer-controls {
+      font-size: 13px;
+      text-align: center;
+      position: fixed;
+      bottom: 12px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+           -o-transform: translateX(-50%);
+              transform: translateX(-50%);
+      z-index: 3;
+      margin-right: -50%;
+      background: rgba(0, 0, 0, 0.75);
+      -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+              border-radius: 3px;
+      overflow: hidden; }
+      .docViewer .docViewer-inner #docViewer-controls.gif .docViewer-controls-inner.center, .docViewer .docViewer-inner #docViewer-controls.jpg .docViewer-controls-inner.center, .docViewer .docViewer-inner #docViewer-controls.png .docViewer-controls-inner.center {
+        display: inline-block; }
+      .docViewer .docViewer-inner #docViewer-controls .docViewer-controls-inner {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 2px; }
+        .docViewer .docViewer-inner #docViewer-controls .docViewer-controls-inner > * {
+          color: #ffffff;
+          display: inline-block;
+          line-height: 40px;
+          vertical-align: middle;
+          min-width: 44px;
+          margin: 0;
+          padding: 0 8px;
+          background: none;
+          border: none;
+          -webkit-border-radius: 3px;
+             -moz-border-radius: 3px;
+                  border-radius: 3px;
+          cursor: pointer;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none; }
+        .docViewer .docViewer-inner #docViewer-controls .docViewer-controls-inner.left {
+          float: left; }
+        .docViewer .docViewer-inner #docViewer-controls .docViewer-controls-inner.center {
+          display: none; }
+        .docViewer .docViewer-inner #docViewer-controls .docViewer-controls-inner.right {
+          float: right; }
+        .docViewer .docViewer-inner #docViewer-controls .docViewer-controls-inner div:hover {
+          background: rgba(255, 255, 255, 0.25); }
+        .docViewer .docViewer-inner #docViewer-controls .docViewer-controls-inner input {
+          width: 60px;
+          padding: 0 0 0 12px; }
+      @media (max-width: 425px) {
+        .docViewer .docViewer-inner #docViewer-controls {
+          font-size: 0.66em;
+          bottom: 0;
+          width: 100%;
+          -webkit-border-radius: 0;
+             -moz-border-radius: 0;
+                  border-radius: 0; }
+          .docViewer .docViewer-inner #docViewer-controls .docViewer-controls-inner div:hover {
+            background: none; } }
+    .docViewer .docViewer-inner #docViewer-body {
+      position: relative;
+      bottom: 0 !important;
+      height: 100%;
+      overflow: auto; }
+      .docViewer .docViewer-inner #docViewer-body img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+           -moz-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+             -o-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+        max-height: none;
+        max-width: none; }
+      .docViewer .docViewer-inner #docViewer-body iframe {
+        width: 100%;
+        height: 100%;
+        border: 0; }
