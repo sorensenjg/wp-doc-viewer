@@ -1,8 +1,6 @@
 (function($) {
   "use strict";
 
-  // comment for commit
-
   $(window).load(function() {
 
     fitWindow('.docViewer', '', false);
