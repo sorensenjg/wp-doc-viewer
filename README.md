@@ -6,10 +6,10 @@ A document viewer plugin for wordpress that handles jpg, png, gif, pdf, doc, xls
 <h2>How to use:</h2>
 <p>This plugin exposes a function that accepts two parameters:</p>
 <ul>
+<li>$url – provides the path to the file for display.</li>
 <li>$name – displays a title, otherwise defaults to the filename (optional).</li>
-<li>$url – provides the path to the file for display (required).</li>
 </ul>
-<pre><code>echo docViewer($name, $url);</code></pre>
+<pre><code>echo docViewer($url, $name);</code></pre>
 
 <hr>
 

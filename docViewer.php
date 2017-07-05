@@ -24,7 +24,7 @@
   }
 
   // Display docViewer component
-  function docViewer($name, $url) {
+  function docViewer($url, $name) {
 
     $file = basename($url);
     $filename = preg_replace('/\\.[^.\\s]{3,4}$/', '', $file);
