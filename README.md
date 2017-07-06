@@ -3,13 +3,23 @@ A document viewer plugin for wordpress that handles jpg, png, gif, pdf, doc, xls
 
 <hr>
 
-<h2>How to use:</h2>
-<p>This plugin exposes a function that accepts two parameters:</p>
+<h2>How to use shortcode:</h2>
+<p>The shortcode accepts two attributes:</p>
+<ul>
+<li>url – provides the path to the file for display.</li>
+<li>name – displays a title, otherwise defaults to the filename (optional).</li>
+</ul>
+<pre><code>[docViewer url="your_file_url" name="your_file_name"]</code></pre>
+
+<hr>
+
+<h2>How to use function:</h2>
+<p>The plugin also exposes a function that accepts two attributes:</p>
 <ul>
 <li>$url – provides the path to the file for display.</li>
 <li>$name – displays a title, otherwise defaults to the filename (optional).</li>
 </ul>
-<pre><code>echo docViewer($url, $name);</code></pre>
+<pre><code>echo docViewer($url, $name);</code></pre> 
 
 <hr>
 
