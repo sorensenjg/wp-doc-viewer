@@ -1,4 +1,4 @@
-# wp-doc-viewer
+# wp-docViewer
 A document viewer plugin for wordpress that handles jpg, png, gif, pdf, doc, xls and ppt files, using google document viewer.
 
 <hr>
@@ -19,7 +19,7 @@ A document viewer plugin for wordpress that handles jpg, png, gif, pdf, doc, xls
 <li>$url – provides the path to the file for display.</li>
 <li>$name – displays a title, otherwise defaults to the filename (optional).</li>
 </ul>
-<pre><code>echo docViewer($url, $name);</code></pre> 
+<pre><code>echo docViewer($url, $name);</code></pre>
 
 <hr>
 
